@@ -1,0 +1,8 @@
+<h1>Add a New Goal</h1>
+
+<%= form_for @goal do |g| %>
+  <%= g.label :title %>
+  <%= g.text_field :title %><br>
+  <%= render "add", g: g %>
+  <%= g.submit %>
+<% end %>
